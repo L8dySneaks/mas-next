@@ -1,8 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
+/**
+ * The root document, not a component
+ * Global file, any changes here will be available throughout the site
+ * This file gets rendered on the server
+ */
 export default class CustomDocument extends Document {
   render () {
-    // This is a global file, any changes made here will be available throughout the site
+    console.log('hi from document');
     return <Html>
       <Head>
         <meta property="custom" content="michaelaStudio" />
