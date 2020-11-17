@@ -1,7 +1,13 @@
+/**
+ * Importing component based styles
+ * The file has to be *.module.css
+ */
+import styles from '../styles/index.module.css';
+
 function Heading(props) {
   return (
     <div>
-      <h1 className="white">{props.heading}</h1>
+      <h1 className={styles.white}>{props.heading}</h1>
     </div>
   )
 }
