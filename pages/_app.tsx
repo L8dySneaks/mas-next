@@ -1,3 +1,6 @@
+/**
+ * Global Styles only get imported into this file
+ */
 import '../styles/globals.css'
 
 /**
