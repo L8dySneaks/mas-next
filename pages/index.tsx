@@ -11,7 +11,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.ts!</a>
+        {/* anchor tags will reload the page */}
+         Welcome, go to <a href="/page2">Page 2</a>
         </h1>
 
         <p className={styles.description}>
