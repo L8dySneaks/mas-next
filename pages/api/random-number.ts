@@ -1,6 +1,7 @@
 /**
  * It should NOT be a react component
  * This is for REST API Endpoints
+ * In NextJS you have to export a single function in a single file
  * The endpoint for this file would be http://localhost:3000/api/random-number
  * returns random number in json response
  */
