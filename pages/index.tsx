@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -11,8 +12,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-        {/* anchor tags will reload the page */}
-         Welcome, go to <a href="/page2">Page 2</a>
+        {/* Use the NextJS link tag in order to give smooth transition instead of reloading the entire page */}
+         Welcome, go to  
+          <Link href="/page2">
+            <a> Page 2</a>
+          </Link>
         </h1>
 
         <p className={styles.description}>
