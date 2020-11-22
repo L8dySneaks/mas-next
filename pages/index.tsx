@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-        {/* Use the NextJS link tag in order to give smooth transition instead of reloading the entire page */}
+        {/* Dynamic Linking ( if you don't know what the URL is going to be, example would be a new blog post) */}
          Welcome, go to  
           <Link href="/page2/projects">
             <a> Page 2</a>
