@@ -5,5 +5,5 @@
 */
 
 export default function SubProjectName() {
-  return <h1>This is a sub project of a project</h1>
+  return <h1>Hello from second segment</h1>
 }
