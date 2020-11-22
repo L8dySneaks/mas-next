@@ -10,7 +10,7 @@ import '../styles/globals.css'
  * 
  */
 function App({ Component, pageProps }) {
-  console.log('app file');
+  // console.log('app file');
   return <Component {...pageProps} />
 }
 

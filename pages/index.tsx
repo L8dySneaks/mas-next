@@ -14,7 +14,7 @@ export default function Home() {
         <h1 className={styles.title}>
         {/* Use the NextJS link tag in order to give smooth transition instead of reloading the entire page */}
          Welcome, go to  
-          <Link href="/page2">
+          <Link href="/page2/projects">
             <a> Page 2</a>
           </Link>
         </h1>
