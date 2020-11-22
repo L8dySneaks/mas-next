@@ -1,22 +1,17 @@
 /**
- * Importing component based styles
- * The file has to be *.module.css
+ * Main Login page
  */
-import styles from '../styles/index.module.scss';
-
-function Heading(props) {
-  return (
-    <div>
-      <h1 className={styles.white}><span>I'm bitch</span> {props.heading}</h1>
-    </div>
-  )
-}
 
 export default function Home() {
   return (
     <div>
-      <Heading heading="Tits" />
-      <h1>Here</h1>
+      <form method="POST" action="/api/login">
+        <input type="text" name="username" defaultValue="admin" />
+        <br/>
+        <input type="password" name="password" defaultValue="admin" />
+        <br/>
+        <input type="submit" value="Login" />
+      </form>
     </div>
   )
 }
