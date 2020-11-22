@@ -1,22 +1,33 @@
-/**
- * Importing component based styles
- * The file has to be *.module.css
- */
-import styles from '../styles/index.module.scss';
-
-function Heading(props) {
-  return (
-    <div>
-      <h1 className={styles.white}><span>I'm bitch</span> {props.heading}</h1>
-    </div>
-  )
-}
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
-      <Heading heading="Tits" />
-      <h1>Here</h1>
+    <div className={styles.container}>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className={styles.main}>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.ts!</a>
+        </h1>
+
+        <p className={styles.description}>
+          Get started by editing{' '}
+          <code className={styles.code}>pages/index.js</code>
+        </p>
+
+        <div className={styles.grid}>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h3>Documentation &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+         
+        </div>
+      </main>
+
     </div>
   )
 }
