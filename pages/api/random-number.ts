@@ -13,12 +13,14 @@ export default function(req: NextApiRequest, res: NextApiResponse) {
   // console.log('Request body', req.body.username);
   // res.json({ status: 'ok' });
 
-  res.statusCode = 200
+  res.statusCode = 200;
+  // This closes the response stream
+  res.end('Hello! How are you');
 
   // res.setHeader('X-Custom-Header', 'We are open!');
   // res.setHeader('Set-Cookie', 'areyouprogrammer=true;');
   // Send something that is not JSON
-  res.send('Something like this');
+  // res.send('Something like this');
 
   res.json({ num: Math.floor(Math.random() * 10)});
 }
