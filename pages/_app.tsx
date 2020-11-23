@@ -2,7 +2,7 @@
  * Global Styles only get imported into this file
  */
 
-import '../styles/index.css';
+import '../styles/globals.css';
 
 /**
  * This file is responsible for rendering all of the pages
