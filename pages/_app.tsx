@@ -1,7 +1,8 @@
 /**
  * Global Styles only get imported into this file
  */
-import '../styles/globals.css'
+
+import '../styles/index.css';
 
 /**
  * This file is responsible for rendering all of the pages
@@ -10,7 +11,6 @@ import '../styles/globals.css'
  * 
  */
 function App({ Component, pageProps }) {
-  console.log('app file');
   return <Component {...pageProps} />
 }
 
